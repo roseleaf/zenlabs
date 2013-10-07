@@ -1,0 +1,158 @@
+#filters {padding-left: 0;}
+#filters small{ font-weight: lighter; text-transform: uppercase; color: #999;}
+#appscontainer{float:left; margin-left: 20px; height: auto; min-height: 300px;}
+#appscontainer h1, .name h1{ text-transform: none !important;}
+#widgetlist{
+	height: 95px; 
+	padding: 0; padding-bottom: 30px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	min-width: 1300px;
+}
+#widgetlist a, .appname{ height: 100%; width: 95%; display: block; color: black; margin: 0 auto;
+}
+#widgetlist a:visited{color: black;}
+.listmask{ overflow: hidden; height: 102px; margin: 0 3px 0 20px; }
+.listspan{margin: 0 3px 0 3px; }
+.listmask, .listspan{ width: 520px; float: left; }
+.listspan{ height: 120px; overflow-x: scroll; overflow-y: hidden;}
+#widgetlist li{ 
+	margin: 0 5px 10px 5px;
+	height: 82px; 
+	width: 100px; 
+	text-align: center; 
+	padding: 10px 15px 10px 15px;
+	float: left;
+	display: inline;
+	position: relative;
+}
+#widgetlist li.whitebox.item{ padding: 10px 0 10px 0; }
+.item:hover, #sliderback:hover{ background: #ddd; }
+.item a{ width: 100%; height: 100%; display: block; }
+#filterhead{font-family: 'DINNextLTPro-Light'; margin: 15px 0 0 633px; width: 92px; height: 50px; text-align: right;}
+#singleapp{
+max-width: 515px;
+/*border: 2px solid #ddd;
+background: #FFF;*/
+padding: 10px 25px 20px 26px;
+margin-top: 15px;}
+#singleapp img{ max-width: 480px; }
+small.muted{
+	font-weight: lighter;
+	color: black;
+}
+.name{margin-top: 0; margin-left: 25px; width: 100%; float: left;}
+.name h1{ font-family: "DINNextLTPro-Light"; margin-left: -2px; }
+.shortDescript{ 
+	padding-bottom: 22px;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	font-size: 16px;
+	font-weight: lighter;
+}
+.description h1{ font-size: 24px; }
+.description h2{ font-size: 18px; }
+.description h3{ font-size: 16px; }
+.description h4{ font-size: 14px; }
+.description p{ margin-right: 10px; }
+.downloadButton{ margin-bottom: 60px; margin-top: 24px; }
+.leftarrow{
+float: left;
+width: 42px;
+height: 42px;
+background: url('/assets/arrows.png');
+margin-left: -40px;
+display: none;
+}
+.rightarrow{
+position: absolute;
+width: 42px;
+height: 42px;
+background: url('/assets/arrows.png');
+background-position: -44px 0;
+margin-left: 570px;
+}
+.leftarrow:hover{ background-position: 0 41px; }
+.rightarrow:hover{ background-position: -44px 41px; }
+.leftarrow, .rightarrow{
+	margin-top: 30px; 
+	text-align: center;   
+	cursor: pointer;
+	transition: visibility 0.5s ease-in-out;
+	-moz-transition: visibility 0.5s ease-in-out;
+	-o-transition: visibility 0.5s ease-in-out;
+	-webkit-transition: visibility 0.5s ease-in-out;
+}
+.leftarrow span, .rightarrow span{
+margin-top: -20px;
+display: block;
+font-family: 'helvetica neue';
+font-size: 10px;
+text-transform: uppercase;
+color: #999;
+margin-left: 1px;
+}
+.lineview {
+background: url('/assets/arrows.png');
+width: 32px;
+height: 23px;
+background-position: 50px 0;
+float: left;
+
+}
+.gridview {
+background: url('/assets/arrows.png');
+width: 30px;
+height: 25px;
+background-position: 50px 50px;
+float: left;
+margin-top: 4px;
+}
+.controls {
+width: 136px;
+height: 35px;
+float: left;
+cursor: pointer;
+margin-left: 12px;
+}
+#widgetgrid li {
+display: inline;
+width: 120px;
+float: left;
+height: 140px;
+margin: 5px;
+padding: 0;
+text-align: center;
+margin-bottom: 23px;
+}
+#widgetgrid img{
+	width: 100%;
+	height: 100px;
+	margin-top: -18px;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	-moz-border-top-right-radius: 3px;
+	-moz-border-top-left-radius: 3px;
+}
+#widgetgrid{
+width: 600px;
+height: 100%;
+min-height: 100px;
+margin-left: -60px;
+overflow: visible !important;
+}
+#sliderlist{
+width: 900px;
+margin: 0 auto;
+height: 230px;
+}
+#sliderlist h2{
+border-top: 1px solid #D3D3D3;
+width: 515px;
+text-align: center;
+margin-top: 50px;
+padding-top: 10px;
+margin-left: 26px;
+}
+#sliderback { background-color: #f3f3f3; }
+.single{ margin-left: -11px; }

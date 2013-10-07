@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'DNLTM';
+  src: url('fonts/DINNextLTPro-Medium.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DINNextLTPro-Light";
+  src: url("fonts/DINNextLTPro-Light.otf");
+}
+@font-face {
+  font-family: "DINNextLTPro-Regular"; 
+  src: url("fonts/DINNextLTPro-Regular.otf");
+}
+@font-face {
+  font-family: "DINNextRoundedLTPro-Bold";
+  src: url("fonts/DINNextRoundedLTPro-Bold.otf");
+}

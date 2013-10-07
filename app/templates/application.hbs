@@ -1,0 +1,28 @@
+<div id="main" class="container">
+    <div id="main">
+        <ul id="navbar">
+          <li>
+            {{#linkTo 'index' class="root"}}Labs Home{{/linkTo}}
+          </li>
+          <li>
+            {{#linkTo 'getstarted' class="getstarted"}}Getting Started{{/linkTo}}
+            {{outlet startNav}}
+          </li>
+          <li>
+            {{#linkTo 'extensions' class="directory"}}Labs Directory{{/linkTo}}
+            {{outlet sideFilter}}
+          </li>
+        </ul>
+        <div class="row-fluid">
+
+          <div>
+            <div class="span9 content">
+                    {{outlet}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+</footer>

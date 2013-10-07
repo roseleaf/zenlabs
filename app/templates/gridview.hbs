@@ -1,0 +1,12 @@
+<section id="main_content" class="inner">
+  <ul id="widgetgrid">
+  	{{#each model}}
+		<li {{bindAttr class="category :item :whitebox :shadow"}}>
+			{{#linkTo 'extension' this}}
+				<img {{bindAttr src="icon_url"}} onerror="this.src='assets/images/default.png';"/>
+				<span class="appname">{{name}}</span>
+			{{/linkTo}}
+		</li>  		
+  	{{/each}}
+  </ul>
+</section>
