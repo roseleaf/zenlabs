@@ -1,4 +1,3 @@
-
 var Extension = DS.Model.extend({
     name: DS.attr('string'),
     download_url: DS.attr('string'),

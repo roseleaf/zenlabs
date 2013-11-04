@@ -1,6 +1,8 @@
 var router = Ember.Router.map(function(){
-  this.route("home", {path: "index"});  
-  this.route("getstarted");
+  this.route('home', {path: 'index'});  
+  this.route('getstarted');
+
+  this.route('zendesk_client');
 
   this.resource('extension_edit');
   this.resource('extension_edit', { path: '/extension_edit/:extension_edit_id' });

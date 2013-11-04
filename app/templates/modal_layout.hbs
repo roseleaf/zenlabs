@@ -1,0 +1,14 @@
+<div class="modal">
+	<div class="modal-header">
+		<button {{ action "dismissModal" target="view"}} type="button" class="close">x</button>
+		<h3>Download Zenlabs Extension</h3>
+	</div>
+	<div class="modal-body">
+		{{yield}}
+	</div>
+	<div class="modal-footer">
+		<button {{action "dismissModal" target="view"}} class="btn close">Cancel download</button>
+		<button {{action "showAuthForm" target="view"}}  class="agree btn btn-inverse">Agree and Install</button>
+		<a {{bindAttr href="zip_url"}} class="agree btn btn-inverse">Agree and Download</a>
+	</div>
+</div>		

@@ -14,5 +14,3 @@ var ExtensionsRoute = Ember.Route.extend({
 });
 
 export default ExtensionsRoute;
-
-
