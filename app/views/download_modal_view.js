@@ -15,15 +15,15 @@ var DownloadModalView = Ember.View.extend({
 		console.log("mewth", this.extension);
 
 		var parent = this.get('parentView');
-		console.log("meow?", parent.$('.agree.btn'));
-		parent.$('.agree.btn').attr("disabled", "disabled").css({"backgroundColor": "#ccc", "backgroundImage": "none"});
+		console.log("meow?", parent.$('.agree.btn'), document.location.origin);
+		$('.agree.btn', parent).attr("disabled", "disabled").css({"backgroundColor": "#ccc", "backgroundImage": "none"});
 	},
 	createOauthClient: function(subdomain){
 		var self = this;
 		$.ajax({
 			type: "POST",
 			url: "http://localhost:3000/api/v1/set_account",
-			data: { subdomain: subdomain, extension: JSON.parse(this.extension._data) },
+			data: { subdomain: subdomain, extension: this.extension._data.id, return_url: document.location.origin + "/upload" },
 		}).done(function(data, status){
 			console.log("ok", data.auth_url, status );
 			self.showAuthURL(data.auth_url);
