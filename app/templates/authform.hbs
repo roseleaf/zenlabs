@@ -2,5 +2,5 @@
 <p> If you need to edit the source code or prefer to upload the app manually, click on "Agree and Download" below.</p>
 <h2>Step 1</h2><p class="formHeader">Please enter your Zendesk Subdomain:</p> 
 <span class="form-info">https://</span>
-{{input valueBinding="view.subdomain" name="subdomain"}} <span class="form-info">.zendesk.com</span>
-<button {{action createOauthClient view.subdomain target="view"}}>Go </button>
+{{input valueBinding="subdomain" name="subdomain"}} <span class="form-info">.zendesk.com</span>
+<button {{action createOauthClient subdomain }}>Go </button>

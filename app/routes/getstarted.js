@@ -15,12 +15,12 @@ var GetstartedRoute = Ember.Route.extend({
 		this.render('privateapps', {into: 'getstarted', outlet: 'maintab'});
 	},
 	setupController: function(controller){
-	controller.set('setActiveTab', function(){
-		$('#directionsType a').click(function(){
-			$('.active').removeClass('active');
-			$(this).addClass('active');
+		controller.set('setActiveTab', function(){
+			$('#directionsType a').click(function(){
+				$('.active').removeClass('active');
+				$(this).addClass('active');
+			});
 		});
-	});
 	}
 });
 

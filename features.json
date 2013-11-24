@@ -1,1 +1,1 @@
-ENV = {FEATURES: {'query-params': true}};
+{"query-params": true};

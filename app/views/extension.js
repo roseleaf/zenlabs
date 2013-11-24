@@ -1,7 +1,7 @@
 import DownloadModalView from 'appkit/views/download_modal_view';
 
 var ExtensionView = Ember.View.extend({
-    templateName: 'extension',
+    //templateName: 'extension',
 	showModal: function() {
 		var modal = this.createChildView(DownloadModalView.create({
 			extension: this.controller.get('content')
